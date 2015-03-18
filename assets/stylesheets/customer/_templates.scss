@@ -77,6 +77,12 @@ blockquote {
     -moz-box-sizing: border-box;
 }
 
+.footer {
+    position: fixed;
+    bottom: 48px;
+    right: 20px;
+}
+
 .alf-region {
     margin-bottom: 16px;
     overflow: hidden;
@@ -237,6 +243,16 @@ blockquote {
     font-size: 14px;
     p {
         margin: 0;
+    }
+}
+
+@for $i from 1 through 20 {
+    .alf-page-#{$i} .pagenum:before {
+        content: "#{$i}";
+    }
+
+    .alf-pagenum-total-#{$i} .pagenum:after {
+        content: "#{$i}";
     }
 }
 
