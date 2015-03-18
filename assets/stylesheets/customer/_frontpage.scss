@@ -1,0 +1,77 @@
+.frontpage-top-left {
+    position: absolute;
+    color: #FFF;
+    width: 954px;
+    top: 130px;
+    left: 35px;
+    height: 0;
+    overflow: visible;
+
+    h1 {
+        font-size: 90px;
+        font-weight: normal;
+    }
+}
+
+.frontpage-centered {
+    position: absolute;
+    color: #FFF;
+    width: 70%;
+    top: 150px;
+    left: 15%;
+    height: 0;
+    overflow: visible;
+    text-align: center;
+
+    h1 {
+        font-size: 84px;
+        line-height: 1;
+        font-family: "Fedra Serif Display", serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        vertical-align: text-top;
+        span {
+            vertical-align: text-top;
+            line-height: 1;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .excerpt {
+        font-family: "Fedra Sans Std Light", sans-serif;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .byline {
+        font-family: "Fedra Serif A Std Demi", serif;
+        font-size: 13px;
+        line-height: 18px;
+        text-transform: uppercase;
+        border: none;
+    }
+}
+
+.header-section {
+    font-family: "Fedra Serif A Std Demi", serif;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 300;
+    position: absolute;
+    border-bottom: 1px solid #fff;
+    left: 46px;
+    top: 60px;
+    color: #fff;
+}
+
+.header-serif h1 {
+    font-size: 80px;
+    font-family: Courier;
+    line-height: 0.8em;
+    margin: 0 0 16px;
+}

@@ -1,0 +1,50 @@
+@import "../aptoma/fonts/ptserif";
+@import "../aptoma/fonts/opensans";
+@import "../aptoma/fonts/oswald";
+@import "../aptoma/fonts/lora";
+
+@import "fonts/fedra";
+
+/**
+ * Alf fonts
+ * These will be available in the font dropdown
+ */
+
+/*
+ .alf-font-example {
+     font-family: Helvetica !important;
+     font-weight: bold !important;
+ }
+ */
+
+.title {
+    &.serif,
+    &.serif h1 {
+        font-size: 80px;
+        line-height: 70px;
+    }
+
+    &.sans,
+    &.sans h1 {
+        font-size: 100px;
+    }
+
+    &.condensed,
+    &.condensed h1 {
+        font-size: 90px;
+        line-height: 90px;
+        font-weight: 700;
+    }
+}
+
+.excerpt {
+    &.serif {
+    }
+
+    &.sans {
+    }
+}
+
+.header-section {
+    font-family: $fonts-sans;
+}

@@ -1,0 +1,57 @@
+html {
+    font-size: 62.5%;
+
+    &.alf-size-sm {
+        font-size: 55.6%;
+    }
+
+    &.alf-size-md {
+        font-size: 62.5%;
+    }
+
+    &.alf-size-lg {
+        font-size: 69.4%;
+    }
+
+    &.alf-size-xl {
+        font-size: 76.3%;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+}
+
+.alf-chrome {
+    background: $colors-background;
+    color: $colors-font;
+    font-family: $fonts-body;
+    font-size: $fonts-body-size;
+    line-height: $line-height;
+    -webkit-user-select: none;
+}
+
+.alf-size-sm .alf-chrome .alf-region {
+    line-height: $line-height - 2;
+}
+
+.alf-size-lg .alf-chrome .alf-region {
+    line-height: $line-height + 2;
+}
+
+.alf-size-xl .alf-chrome .alf-region {
+    line-height: $line-height + 4;
+}
+
+@import "mixins";
+@import "fonts";
+@import "regions";
+@import "fullscreen";
+@import "slideshow";
