@@ -1,2 +1,4 @@
 node_modules
 .sass-cache
+assets/stylesheets/styles.css
+assets/stylesheets/styles.css.map
