@@ -38,10 +38,17 @@
      class="alf-template"
      data-filter-page-pos="!1"
      >
-    <div class="image-triple-2-1">
-        <div class="alf-container triple-2-1-first alf-is-resizable alf-is-draggable" data-map="portrait-generic-small-media-only"></div>
-        <div class="alf-container triple-2-1-second alf-is-resizable alf-is-draggable" data-map="portrait-generic-small-media-only"></div>
-        <div class="alf-container triple-2-1-third alf-is-resizable alf-is-draggable" data-map="landscape-generic-large-media-only"></div>
+    <div class="image-triple-2-1 image-grid">
+        <div class="flex-row">
+            <div class="alf-container triple-2-1-first alf-is-resizable alf-is-draggable" data-map="portrait-generic-large" data-ref="1" data-select="img"></div>
+            <div class="alf-container triple-2-1-second alf-is-resizable alf-is-draggable" data-map="portrait-generic-large" data-ref="2" data-select="img"></div>
+        </div>
+        <div class="alf-container triple-2-1-third alf-is-resizable alf-is-draggable" data-map="landscape-generic-large" data-ref="3" data-select="img"></div>
+        <div class="captions">
+            <span class="alf-container alf-is-optional" data-ref="1"><span class="dot">1</span><span data-select=".caption"></span></span>
+            <span class="alf-container alf-is-optional" data-ref="2"><span class="dot">2</span><span data-select=".caption"></span></span>
+            <span class="alf-container alf-is-optional" data-ref="3"><span class="dot">3</span><span data-select=".caption"></span></span>
+        </div>
     </div>
     <div class="footer"><span class="pagenum">/</span></div>
 </div>
@@ -51,11 +58,20 @@
      class="alf-template"
      data-filter-page-pos="!1"
      >
-    <div class="image-triple-1-2 alf-is-resizable">
-        <div class="alf-container triple-1-2-first alf-is-resizable alf-is-draggable" data-map="3x4-large-media-only"></div>
-        <div>
-            <div class="alf-container triple-1-2-second alf-is-resizable alf-is-draggable" data-map="portrait-generic-small-media-only"></div>
-            <div class="alf-container triple-1-2-third alf-is-resizable alf-is-draggable" data-map="landscape-generic-small-media-only"></div>
+    <div class="image-triple-1-2 image-grid">
+        <div class="flex-row">
+            <div class="image-triple-1-2-left">
+                <div class="alf-container triple-1-2-first alf-is-draggable" data-map="*-large" data-ref="1" data-select="img"></div>
+            </div>
+            <div class="image-triple-1-2-right">
+                <div class="alf-container triple-1-2-second alf-is-draggable alf-is-resizable" data-map="portrait-generic-large" data-ref="2" data-select="img"></div>
+                <div class="alf-container triple-1-2-third alf-is-draggable" data-map="landscape-generic-large" data-ref="3" data-select="img"></div>
+            </div>
+        </div>
+        <div class="captions">
+            <span class="alf-container alf-is-optional" data-ref="1"><span class="dot">1</span><span data-select=".caption"></span></span>
+            <span class="alf-container alf-is-optional" data-ref="2"><span class="dot">2</span><span data-select=".caption"></span></span>
+            <span class="alf-container alf-is-optional" data-ref="3"><span class="dot">3</span><span data-select=".caption"></span></span>
         </div>
     </div>
     <div class="footer"><span class="pagenum">/</span></div>
@@ -66,8 +82,9 @@
      class="alf-template alf-grid alf-cols-3 content-page"
      data-filter-page-pos="!1"
      >
-    <div class="alf-col-1 alf-colspan-3 alf-container" data-map="landscape-generic-large-media-only"></div>
+    <div class="alf-col-1 alf-colspan-3 alf-container" data-map="landscape-generic-large" data-ref="1" data-select="img"></div>
     <div class="alf-col-1 alf-colspan-2 alf-region alf-flex"></div>
+    <div class="alf-col-3 captions alf-container alf-is-optional" data-ref="1" data-select=".caption"></div>
     <div class="footer"><span class="pagenum">/</span></div>
 </div>
 
