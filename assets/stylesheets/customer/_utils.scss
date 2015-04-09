@@ -19,12 +19,11 @@
 }
 
 .light-box {
-    background: white;
-    background: rgba(255,255,255,0.9);
+    background: #fff;
+    border-radius: 2px;
     color: #333;
     padding: 15px;
     width: 50%;
-    border-radius: 2px;
 
     p {
         margin: 0;
@@ -32,29 +31,28 @@
     }
 }
 
-
 .fill-top-half {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
     bottom: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .fill-bottom-half {
-    position: absolute;
-    top: 40%;
-    right: 0;
-    left: 0;
     bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 40%;
 }
 
 .fill-left-half {
-    position: absolute;
-    top: 0;
-    right: 50%;
-    left: 0;
     bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 50%;
+    top: 0;
 }
 
 .uppercase {
@@ -62,9 +60,9 @@
 }
 
 .fill-height {
+    bottom: 0;
     position: absolute;
     top: 0;
-    bottom: 0;
 }
 
 .fill-width {
@@ -86,9 +84,8 @@
 }
 
 .content-indent {
-    padding: 0 35px;
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    padding: 0 35px;
 }
 
 .unstyled {
@@ -106,12 +103,12 @@
 }
 
 .white-background {
-    padding: 15px 0 5px;
     background: #f5f5f5;
+    padding: 15px 0 5px;
 }
 
 .white-text {
-    color: #FFF;
+    color: #fff;
 }
 
 .black-text {
@@ -119,7 +116,7 @@
 }
 
 .shadow {
-    box-shadow: 0 0 6px #A6A6A6;
+    box-shadow: 0 0 6px #a6a6a6;
 }
 
 .align-center {
@@ -127,5 +124,5 @@
 }
 
 .no-border {
-    border: none;
+    border: 0;
 }

@@ -5,12 +5,11 @@
 .alf-col-1 {
     left: 0;
     width: 443px;
-}
-
-.alf-col-1.alf-colspan-3 {
-    left: 0;
-    width: 676px;
-    margin-bottom: 48px;
+    &.alf-colspan-3 {
+        left: 0;
+        margin-bottom: 48px;
+        width: 676px;
+    }
 }
 
 .alf-col-3 {
@@ -19,12 +18,13 @@
 }
 
 .image-triple-2-1 {
-    position: relative;
     margin: 108px 150px 48px;
+    position: relative;
+
     img {
-        max-width: 100%;
-        height: auto !important;
         display: block;
+        height: auto !important;
+        max-width: 100%;
     }
 }
 
@@ -34,13 +34,13 @@
 }
 
 .triple-2-1-first {
-    margin-right: 4px;
     flex-grow: 1;
+    margin-right: 4px;
 }
 
 .triple-2-1-second {
-    margin-left: 4px;
     flex-grow: 1;
+    margin-left: 4px;
 }
 
 .triple-2-1-third {
@@ -48,50 +48,51 @@
 }
 
 .image-triple-1-2 {
-    position: relative;
-    overflow: hidden;
     margin: 108px 48px 48px;
+    overflow: hidden;
+    position: relative;
+
     img {
         display: block;
-        width: 100% !important;
         height: 100% !important;
+        width: 100% !important;
     }
 }
 
 .image-triple-1-2-left {
-    overflow: hidden;
-    margin-right: 10px;
     flex-basis: 400px;
+    margin-right: 10px;
+    overflow: hidden;
 }
 
 .image-triple-1-2-right {
-    overflow: hidden;
-    flex-grow: 1;
     flex-basis: 200px;
-}
-
-.image-grid [data-select="img"] {
-    position: relative;
+    flex-grow: 1;
     overflow: hidden;
 }
 
-.image-grid [data-select="img"]::after {
-    position: absolute;
-    z-index: 10;
+.image-grid [data-select='img'] {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-grid [data-select='img']::after {
+    background: $colors-blue-dot;
     color: #fff;
     font-size: 10px;
-    width: 13px;
     height: 13px;
     line-height: 13px;
+    position: absolute;
     text-align: center;
-    background: $colors-blue-dot;
+    width: 13px;
+    z-index: 10;
 }
 
 .triple-2-1-first::after,
 .triple-1-2-first::after {
-    content: "1";
-    right: 0;
     bottom: 0;
+    content: '1';
+    right: 0;
 }
 
 .triple-1-2-second {
@@ -100,19 +101,19 @@
 
 .triple-2-1-second::after,
 .triple-1-2-second::after {
-    content: "2";
-    left: 0;
     bottom: 0;
+    content: '2';
+    left: 0;
 }
 
 .triple-2-1-third::after {
-    content: "3";
-    top: 0;
+    content: '3';
     left: 48.5%;
+    top: 0;
 }
 
 .triple-1-2-third::after {
-    content: "3";
-    left: 0;
     bottom: 0;
+    content: '3';
+    left: 0;
 }

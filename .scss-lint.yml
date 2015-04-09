@@ -1,0 +1,6 @@
+scss_files: 'assets/stylesheets/customer/**/*.scss'
+exclude: 'assets/stylesheets/aptoma/**'
+
+linters:
+    Indentation:
+        width: 4
