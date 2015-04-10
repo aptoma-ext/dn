@@ -9,12 +9,15 @@
  * These will be available in the font dropdown
  */
 
-/*
- .alf-font-example {
-     font-family: Helvetica !important;
-     font-weight: bold !important;
- }
- */
+.alf-font-fedra-serif-display {
+ font-family: 'Fedra Serif Display' !important;
+ font-weight: normal !important;
+}
+
+.alf-font-fedra-sans-light {
+ font-family: 'Fedra Sans Std Light' !important;
+ font-weight: normal !important;
+}
 
 .title {
     &.serif,
