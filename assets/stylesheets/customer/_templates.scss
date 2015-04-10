@@ -197,10 +197,10 @@ blockquote {
 
 .image-grid .captions {
     text-align: center;
+    background: $colors-blue-background;
 }
 
 .captions {
-    background: $colors-blue-background;
     color: $colors-font;
     font-family: 'Fedra Sans Std Book', sans-serif;
     padding: 20px 3px;
