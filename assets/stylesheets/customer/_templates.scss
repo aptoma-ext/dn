@@ -94,7 +94,11 @@ blockquote {
         display: inline-block;
         font-size: inherit;
         margin-right: 3px;
-        margin-top: 38px;
+        padding-top: 38px;
+
+        &:first-child {
+            padding-top: 0;
+        }
 
         + p {
             display: inline;
