@@ -29,16 +29,19 @@
 }
 
 .flex-row {
+    display: -webkit-flex;
     display: flex;
     width: 100%;
 }
 
 .triple-2-1-first {
+    -webkit-flex-grow: 1;
     flex-grow: 1;
     margin-right: 4px;
 }
 
 .triple-2-1-second {
+    -webkit-flex-grow: 1;
     flex-grow: 1;
     margin-left: 4px;
 }
@@ -60,13 +63,16 @@
 }
 
 .image-triple-1-2-left {
+    -webkit-flex-basis: 400px;
     flex-basis: 400px;
     margin-right: 10px;
     overflow: hidden;
 }
 
 .image-triple-1-2-right {
+    -webkit-flex-basis: 200px;
     flex-basis: 200px;
+    -webkit-flex-grow: 1;
     flex-grow: 1;
     overflow: hidden;
 }
