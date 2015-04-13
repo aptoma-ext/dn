@@ -290,7 +290,7 @@ blockquote {
 }
 
 @for $i from 1 through 20 {
-    .alf-page-#{$i} .pagenum:before {
+    .alf-pagenum-#{$i} .pagenum:before {
         content: "#{$i}";
     }
 
