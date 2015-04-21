@@ -3,11 +3,17 @@
 @import "../aptoma/fonts/oswald";
 @import "../aptoma/fonts/lora";
 @import "fonts/fedra";
+@import "fonts/guardian";
 
 /**
  * Alf fonts
  * These will be available in the font dropdown
  */
+
+.alf-font-Guardian-Sans-Cond-Bold {
+    font-family: 'Guardian Sans Cond Bold' !important;
+    font-weight: bold !important;
+}
 
 .alf-font-fedra-serif-display {
     font-family: 'Fedra Serif Display' !important;
