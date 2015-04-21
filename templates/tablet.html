@@ -5,7 +5,20 @@
      class="alf-template frontpage"
      data-filter-format-name="tablet"
      data-filter-page-pos="1">
-    <div class="alf-container no-margin" data-map="*-large-media-only"></div>
+    <div class="alf-container no-margin" data-map="portrait-generic-large-media-only"></div>
+    <h2 class="alf-container alf-is-removable header-section" data-map="section"></h2>
+    <div class="frontpage-centered">
+        <div class="alf-container alf-is-draggable alf-is-editable title" data-map="title"></div>
+        <div class="alf-container alf-is-draggable alf-is-editable alf-is-removable alf-is-resizable excerpt sans align-center" data-map="excerpt"></div>
+        <div class="alf-container alf-is-draggable alf-is-editable alf-is-optional byline" data-map="byline"></div>
+    </div>
+</div>
+
+<div data-map="article"
+     data-name="Front Page - No Image, Centered Text"
+     class="alf-template frontpage"
+     data-filter-format-name="tablet"
+     data-filter-page-pos="1">
     <h2 class="alf-container alf-is-removable header-section" data-map="section"></h2>
     <div class="frontpage-centered">
         <div class="alf-container alf-is-draggable alf-is-editable title" data-map="title"></div>
@@ -44,6 +57,19 @@
     <div class="alf-col-3 alf-container alf-is-optional alf-is-editable" data-map="fact-box"></div>
 
     <div class="footer"><span class="pagenum">/</span></div>
+</div>
+
+
+<div data-map="article"
+     data-name="Full Image, caption"
+     class="alf-template frontpage"
+     data-filter-format-name="tablet"
+     data-filter-page-pos="!1">
+    <div class="alf-container no-margin" data-map="*-large" data-ref="1" data-select="img"></div>
+
+    <div class="picture-page">
+		<div class="alf-container alf-is-optional alf-is-draggable alf-is-resizable full-image-caption" data-ref="1"><span data-select=".caption"></span></div>
+    </div>
 </div>
 
 
