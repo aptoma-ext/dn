@@ -1,14 +1,10 @@
-@charset "UTF-8";
-
-.alf-chrome {
-    a,
-    a:visited {
-        border-bottom: 1px dotted #ccc;
-        color: #333;
-        font-weight: bold;
-        position: relative;
-        text-decoration: none;
-    }
+a,
+a:visited {
+    border-bottom: 1px dotted #ccc;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
 }
 
 //
@@ -301,11 +297,11 @@ blockquote {
 }
 
 @for $i from 1 through 20 {
-    .alf-pagenum-#{$i} .pagenum:before {
+    &.alf-pagenum-#{$i} .pagenum:before {
         content: "#{$i}";
     }
 
-    .alf-pagenum-total-#{$i} .pagenum:after {
+    &.alf-pagenum-total-#{$i} .pagenum:after {
         content: "#{$i}";
     }
 }
@@ -360,4 +356,11 @@ blockquote {
     .frontpage-top-left {
         width: 50%;
     }
+}
+
+.article-body {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 654px;
 }

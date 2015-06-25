@@ -11,11 +11,43 @@
 // Default variables
 @import 'aptoma/variables';
 
+@import "aptoma/mixins/grid";
+@import "aptoma/mixins/guides";
+
 // Customer variables (overrides aptoma/_variables)
 @import 'customer/variables';
 
-// Base styles
-@import 'aptoma/styles';
+// These are styles only in use when the article is in preview mode (inside LP)
+// This is the only place you should place styles on body
+// if they are needed for preview purposes
+.alf-preview {
+    @import "preview";
+}
 
 // Customer styles
-@import 'customer/styles';
+@import 'customer/fonts/fedra';
+@import 'customer/fonts/guardian';
+
+.alf-rev-#{$alf-revision} {
+    background: $colors-background;
+    color: $colors-font;
+    font-family: $fonts-body;
+    font-size: $fonts-body-size;
+    line-height: $line-height;
+    -webkit-user-select: none;
+    -webkit-font-smoothing: antialiased;
+
+    @import 'aptoma/styles';
+
+    @import 'customer/grid';
+    @import 'customer/snippets';
+    @import 'customer/fonts';
+    @import 'customer/fullscreen';
+    @import 'customer/alf-styles';
+    @import 'customer/effects';
+    @import 'customer/gradients';
+    @import 'customer/utils';
+    @import 'customer/frontpage';
+    @import 'customer/templates';
+    @import 'customer/responsive';
+}

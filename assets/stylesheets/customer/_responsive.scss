@@ -2,7 +2,7 @@
  * Specific iPhone styles
  * These styles affects only iphone
  */
-.iphone {
+.responsive {
     .alf-template {
         overflow: hidden
     }
@@ -37,7 +37,8 @@
     }
 
     .header-sans-serif h1 {
-        font-size: 60px;
+        font-size: 4em;
+        line-height: 1em;
     }
 
     .overlay-caption {
@@ -88,4 +89,56 @@
 .tmpl-gallery .alf-slideshow-stack-1,
 .tmpl-gallery .alf-slideshow-stack-2 {
     display: none;
+}
+
+.alf-container-inline {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.alf-gt600 {
+    .alf-container-inline {
+        float: right;
+        margin-left: 20px;
+
+        .alf-slideshow,
+        .media-element {
+            max-width: 320px;
+            height: auto;
+        }
+    }
+
+    .dp-plugin-element {
+        clear: both;
+    }
+}
+
+.responsive .title {
+    font-size: 10px;
+}
+
+.alf-gt400.responsive .title {
+    font-size: 12px;
+}
+
+.alf-gt500.responsive .title {
+    font-size: 13.5px;
+}
+
+.alf-gt600.responsive .title {
+    font-size: 15px;
+}
+
+.alf-gt700.responsive .title {
+    font-size: 16.5px;
+}
+
+.alf-gt800.responsive .title {
+    font-size: 18px;
+}
+
+.alf-gt900.responsive .title {
+    font-size: 20px;
 }

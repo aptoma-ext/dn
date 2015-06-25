@@ -1,0 +1,13 @@
+@include guides(35px, 4, 4);
+@include guides(15px, 2, 2, responsive);
+
+// All formats except iPhone has scrolling disabled
+body {
+    overflow: hidden;
+}
+
+// Enable vertical scrolling for iPhone in preview
+.alf-preview-format-responsive {
+    overflow: visible;
+    overflow-x: hidden;
+}
