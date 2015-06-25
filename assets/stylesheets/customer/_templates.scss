@@ -124,7 +124,7 @@ blockquote {
 
         &::before,
         &::after {
-            content: '“';
+            content: $quote-char;
             font-size: 40px;
         }
     }
